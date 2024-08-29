@@ -1,0 +1,28 @@
+/* body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    background-color: antiquewhite;
+    
+}
+.count{
+    font-size: 60px;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    color: brown;
+    padding: 400px;
+} */
+
+#clock{
+    font-size: 70px;
+    text-align: center;
+    color: brown;
+    padding: 40px;
+    border: 2px black solid ;
+    border-radius: 20px;
+    width: 500px;
+    height: 200px;
+    margin: 200px 200px;
+}
