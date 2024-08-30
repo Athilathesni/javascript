@@ -240,3 +240,86 @@
     // console.log(myBank.dep());
     // console.log(myBank.wid());
     // console.log(myBank.getbalance(5000));
+
+//4.METHODOVERRIDE
+    // class Animal{
+    //     speak(){
+    //         console.log("animal make sound");
+    //     }
+    // }
+    // class Dog extends Animal{
+    //     speak(){
+    //         console.log("dog is bark");
+    //     }
+    // }
+    // class Cat extends Dog{
+    //     speak(){
+    //         console.log("cat is meow");
+    //     }
+    // }
+    // A=new Animal()
+    // D=new Dog()
+    // C=new Cat()
+    // A.speak()
+    // D.speak()
+    // C.speak()
+
+//5.EXCEPTION HANDLING
+
+    // console.log("start");
+    // try {
+    //     a=10
+    //     b=90
+    //     c=a+b
+    //     console.log(c);
+    // } catch (error) {
+    //     console.log("enter proper number");
+        
+    // }
+    // finally{
+    //     console.log("this is a final message");
+    // }
+    // console.log("end");
+
+//6.CALLBACK FUNCTION
+    // function orderFood(callback){
+    //     setTimeout(()=>{
+    //         console.log("food ordered");
+    //     },2000)
+    //     callback()
+    // }
+    // function decorateVenue(callback){
+    //     setTimeout(()=>{
+    //         console.log("venue decorated");
+    //     },2000)
+    //     callback()
+    // }
+    // function arrangeDj(callback){
+    //     setTimeout(()=>{
+    //         console.log("dj arranged");
+    //     },2000)
+    //     callback()
+    // }
+    // orderFood(()=>{
+    //     decorateVenue(()=>{
+    //         arrangeDj(()=>{
+    //             console.log("all task are completed");
+    //         })
+    //     })
+    // })
+
+//7.PROMISE
+    // function fetchdata(){
+    //     return new Promise((resolve,reject)=>{
+    //         setTimeout(()=>{
+    //             resolve("hello")
+    //         },1000)
+    //     })
+    // }
+    // fetchdata().then ((data)=>{
+    //     console.log("then");
+    //     console.log(data);
+    // }).catch((data)=>{
+    //     console.log("catch");
+    //     console.log(error);
+    // })

@@ -874,25 +874,3 @@
 //    btn1.Width=100
 //    console.log(btn1.width,btn1.height)
 
-//METHODOVERRIDE
-class Animal{
-    speak(){
-        console.log("animal make sound");
-    }
-}
-class Dog extends Animal{
-    speak(){
-        console.log("dog is bark");
-    }
-}
-class Cat extends Dog{
-    speak(){
-        console.log("cat is meow");
-    }
-}
-A=new Animal()
-D=new Dog()
-C=new Cat()
-A.speak()
-D.speak()
-C.speak()
