@@ -59,25 +59,49 @@
 // }
 
 //3.task
-        function fetchdata(){
-        fetch("https://jsonplaceholder.typicode.com/comments")
-        .then((res)=>{
-            return res.json()
-        })
-        .then((data)=>{
-            console.log(data);
-            str=``
-            data.map((dt)=>{
-                str+=`<tr>
-                <th>${dt.id}</th>
-                <th>${dt.name}</th>
-                <th>${dt.email}</th>
-                <th>${dt.body}</th>
-                </tr>`
+    //     function fetchdata(){
+    //     fetch("https://jsonplaceholder.typicode.com/comments")
+    //     .then((res)=>{
+    //         return res.json()
+    //     })
+    //     .then((data)=>{
+    //         console.log(data);
+    //         str=``
+    //         data.map((dt)=>{
+    //             str+=`<tr>
+    //             <th>${dt.id}</th>
+    //             <th>${dt.name}</th>
+    //             <th>${dt.email}</th>
+    //             <th>${dt.body}</th>
+    //             </tr>`
+    //         })
+    //         document.getElementById("data").innerHTML=str
+    //     })
+    //     .catch((error)=>{
+    //         console.log(error);
+    //     })
+    // }
+
+    //4.TASK ALBUM CARD
+    function fetchdata(){
+        fetch("https://jsonplaceholder.typicode.com/albums")
+            .then((res)=>{
+                return res.json()
             })
-            document.getElementById("data").innerHTML=str
-        })
-        .catch((error)=>{
-            console.log(error);
-        })
-    }
+            .then((data)=>{
+                console.log(data);
+                str=``
+                data.map((dt)=>{
+                    str+=`
+                    <div class="a1">${dt.id}<br>
+                    ${dt.userId}<br>
+                    ${dt.title}</div>`
+                })
+                document.getElementById("data").innerHTML=str
+            })
+            .catch((error)=>{
+                console.log(error);
+            })
+        }
+
+       
