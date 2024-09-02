@@ -63,25 +63,37 @@
 } */
 /* task5 */
 
-/* .flex-container{
+.flex-container{
     display: flex;
     flex-wrap: wrap;
+    
+
+    
     
 }
 .photos{
     border: 2px solid black;
     margin: 10px;
+    border-radius: 8px;
+   
     
 }
 .ttl{
-    height: 100px;
+    height: 100%;
+    width: 200px;
     text-align: center;
-} */
+}
 /* 6.task */
-.table{
+/* .table{
     th{
         height: 60px;
         text-align: center;
         padding: 15px;
     }
 } 
+.a1{
+    color: green;
+}
+.a2{
+    color: red;
+} */

@@ -106,32 +106,8 @@
 
 //5.TASK PHOTOS CARD
 
-    // function fetchdata(){
-    // fetch("https://jsonplaceholder.typicode.com/photos")
-    //     .then((res)=>{
-    //         return res.json()
-    //     })
-    //     .then((data)=>{
-    //         console.log(data);
-    //         str=``
-    //         data.map((dt)=>{
-    //             str+=`
-    //             <div class="photos">
-    //             <img src="${dt.url}" alt="" style="width:400px">
-    //             <div class="ttl">
-    //             ${dt.title}</div>
-    //             </div>`
-    //         })
-    //         document.getElementById("data").innerHTML=str
-
-    //     })
-    //     .catch((error)=>{
-    //         console.log(error);
-    //     })
-    // }
-//6.TASK TODOS TABLE
     function fetchdata(){
-        fetch("https://jsonplaceholder.typicode.com/todos")
+    fetch("https://jsonplaceholder.typicode.com/photos")
         .then((res)=>{
             return res.json()
         })
@@ -139,16 +115,41 @@
             console.log(data);
             str=``
             data.map((dt)=>{
-                str+=`<tr>
-                <th>${dt.userId}</th>
-                <th>${dt.id}</th>
-                <th>${dt.title}</th>
-                <th>${dt.completed}</th>
-                </tr>`
+                str+=`
+                <div class="photos">
+                <img src="${dt.url}" alt="" style="width:400px">
+                <div class="ttl">
+                ${dt.title}</div>
+                </div>`
             })
             document.getElementById("data").innerHTML=str
+
         })
         .catch((error)=>{
             console.log(error);
         })
     }
+//6.TASK TODOS TABLE
+    // function fetchdata(){
+    //     fetch("https://jsonplaceholder.typicode.com/todos")
+    //     .then((res)=>{
+    //         return res.json()
+    //     })
+    //     .then((data)=>{
+    //         console.log(data);
+    //         str=``
+    //         data.map((dt)=>{
+    //             str+=`<tr>
+    //             <th>${dt.userId}</th>
+    //             <th>${dt.id}</th>
+    //             <th>${dt.title}</th>
+
+    //             <th>${dt.completed?"<h4 class='a1'>completed</h4>":"<h4 class='a2'> Not completed</h4>"}</th>
+    //             </tr>`
+    //         })
+    //         document.getElementById("data").innerHTML=str
+    //     })
+    //     .catch((error)=>{
+    //         console.log(error);
+    //     })
+    // }
