@@ -37,7 +37,9 @@
         padding: 15px;
     }
 }  */
-.flex-container{
+
+
+/* .flex-container{
     display: flex;
     flex-wrap: wrap;
     background-color: gray;
@@ -58,7 +60,28 @@
     flex-wrap: wrap;
     display: flex;
     color: aliceblue;
+} */
+/* task5 */
+
+/* .flex-container{
+    display: flex;
+    flex-wrap: wrap;
+    
 }
-
-
-
+.photos{
+    border: 2px solid black;
+    margin: 10px;
+    
+}
+.ttl{
+    height: 100px;
+    text-align: center;
+} */
+/* 6.task */
+.table{
+    th{
+        height: 60px;
+        text-align: center;
+        padding: 15px;
+    }
+} 
