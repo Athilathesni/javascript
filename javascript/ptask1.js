@@ -198,22 +198,90 @@
 
 
 // 1.ASYNC FUNCTION TASK
-    async function fetchdata() {
-        try{
-            const res =await fetch("https://jsonplaceholder.typicode.com/posts")
-            const data=await res.json();
-            str=``;
-            data.map((dt)=>{
-                str+=`<tr>
-             <th>${dt.id}</th>
-             <th>${dt.userid}</th>
-             <th>${dt.title}</th>
-             <th>${dt.body}</th>
-             </tr>`
-            })
-            document.getElementById("data").innerHTML=str;
-        }catch(error){
-            console.log(error);
+    // async function fetchdata() {
+    //     try{
+    //         const res =await fetch("https://jsonplaceholder.typicode.com/posts")
+    //         const data=await res.json();
+    //         str=``;
+    //         data.map((dt)=>{
+    //             str+=`<tr>
+    //          <th>${dt.id}</th>
+    //          <th>${dt.userid}</th>
+    //          <th>${dt.title}</th>
+    //          <th>${dt.body}</th>
+    //          </tr>`
+    //         })
+    //         document.getElementById("data").innerHTML=str;
+    //     }catch(error){
+    //         console.log(error);
             
-        }
-    } 
+    //     }
+    // } 
+
+
+    // export function add(a,b){
+    //     return a+b
+
+    // }
+    // export function sub(a,b){
+    //     return a-b
+    // }
+
+    //REGULAR EXPRESSION
+
+    // RegExp=/[a-d]at/i
+    //+.*?
+    // RegExp=/fish.+$/
+    // RegExp=/^[^c]at/
+    // RegExp=/^\d{10}$/  //contact number [0-9]
+    // RegExp=/^[6-9]\d{9}$/
+    // RegExp=/^([0-2]\d|3[0-1])-([0-9]\d|1[1-2])-(\d{4})/
+    // console.log(RegExp.test("27-10-2004"));
+    // console.log(RegExp.test("rat eat fishs"));
+    // console.log(RegExp.test("bat eat fruit"));
+
+    //dateofbirthvalidasion
+    
+//    document.getElementById('dobform').addEventListener('submit',function(event){
+//     event.default()
+//     const dobinput=document.getElementById('dob').value
+//     const data=/^([0-2]\d|3[0-1])-([0-9]\d|1[1-2])-(\d{4})/
+//     if(data.test(msg)){
+//         document.getElementById('errormessage').textContent='enter correct formate dd-mm-yyyy'
+//         event.default()
+//     }
+//     else{
+//         document.getElementById('error message').textContent='';
+//     }
+//    });
+
+function asd(){
+    dob=document.getElementById("dobdata").value
+    const dobdata=/^([0-2]\d|3[0-1])-([0-9]\d|1[1-2])-(\d{4})/
+    db=dobdata.test(dob)
+    str=``
+    if(db){
+        str+=`
+    <h6 class="a1">${dob}<br>success</h6>`
+    }
+    else{
+        str+=`
+        <h6 class="a2">Enter Data Correct Formate DD-MM-YYYY</h6>`
+    }
+    document.getElementById("data").innerHTML=str
+    document.getElementById("dobdata").value=""
+}
+    
+   
+// function asd(){
+//         dob=document.getElementById("dobdata").value
+//         const dobdata=/^([0-2]\d|3[0-1])-([0-9]\d|1[1-2])-(\d{4})/
+//         if(!dobdata.test(dob)){
+
+//             alert("please enter valid input")
+//         }
+    
+//         document.getElementById("data").innerHTML=str
+//         document.getElementById("dobdata").value=""
+//     }  
+

@@ -63,7 +63,7 @@
 } */
 /* task5 */
 
-.flex-container{
+/* .flex-container{
     display: flex;
     flex-wrap: wrap;
     
@@ -82,7 +82,7 @@
     height: 100%;
     width: 200px;
     text-align: center;
-}
+} */
 /* 6.task */
 /* .table{
     th{
@@ -97,3 +97,33 @@
 .a2{
     color: red;
 } */
+
+ /* 7.TASK */
+/* .flex-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.user{
+    border: 2px solid black;
+    border-radius: 6px;
+    margin: 10px;
+    width: 300px;
+    background-color: pink;
+}
+.head{
+    color: brown;
+}
+.shead{
+color: rgb(87, 87, 197);
+} */
+
+
+.a1{
+    color: green;
+}
+.a2{
+    color: red;
+}
+.a3{
+    border-radius: 6px;
+}
