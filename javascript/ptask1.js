@@ -230,7 +230,7 @@
     //REGULAR EXPRESSION
 
     // RegExp=/[a-d]at/i
-    //+.*?
+    // +.*?
     // RegExp=/fish.+$/
     // RegExp=/^[^c]at/
     // RegExp=/^\d{10}$/  //contact number [0-9]
@@ -240,48 +240,118 @@
     // console.log(RegExp.test("rat eat fishs"));
     // console.log(RegExp.test("bat eat fruit"));
 
-    //dateofbirthvalidasion
-    
-//    document.getElementById('dobform').addEventListener('submit',function(event){
-//     event.default()
-//     const dobinput=document.getElementById('dob').value
-//     const data=/^([0-2]\d|3[0-1])-([0-9]\d|1[1-2])-(\d{4})/
-//     if(data.test(msg)){
-//         document.getElementById('errormessage').textContent='enter correct formate dd-mm-yyyy'
-//         event.default()
-//     }
-//     else{
-//         document.getElementById('error message').textContent='';
-//     }
-//    });
-
-function asd(){
-    dob=document.getElementById("dobdata").value
-    const dobdata=/^([0-2]\d|3[0-1])-([0-9]\d|1[1-2])-(\d{4})/
-    db=dobdata.test(dob)
-    str=``
-    if(db){
-        str+=`
-    <h6 class="a1">${dob}<br>success</h6>`
-    }
-    else{
-        str+=`
-        <h6 class="a2">Enter Data Correct Formate DD-MM-YYYY</h6>`
-    }
-    document.getElementById("data").innerHTML=str
-    document.getElementById("dobdata").value=""
-}
+// DATE OF BIRTH VALIDATION
+//     function asd(){
+//     dob=document.getElementById("dobdata").value
+//     const dobdata=/^([0-2]\d|3[0-1])-([0-9]\d|1[1-2])-(\d{4})/
+//     db=dobdata.test(dob)
+//      str=``
+//      if(db){
+//          str+=`
+//      <h6 class="a1">${dob}<br>success</h6>`
+//      }
+//      else{
+//          str+=`
+//          <h6 class="a2">Enter Correct Formate DD-MM-YYYY<br></h6>
+//         <h6 class="d1">'DD-01 TO 31'<br>'MM-1 TO 12'<br>'YYYY'</h6>`
+//      }
+//      document.getElementById("data").innerHTML=str
+//      document.getElementById("dobdata").value=""
+//  }
     
    
-// function asd(){
-//         dob=document.getElementById("dobdata").value
-//         const dobdata=/^([0-2]\d|3[0-1])-([0-9]\d|1[1-2])-(\d{4})/
-//         if(!dobdata.test(dob)){
+//USERNAME VALIDATION
+//     function asd(){
+//     a=document.getElementById("user").value
+//     const user=/^[a-zA-Z]{4,}$/
+//     b=user.test(a)
+//     str=``
+//     if(b){
+//         str+=`<li>${a}</li><br>successful`
+//     }
+//     else{
+//         str+=`
+//         <li>invalid username</li>`
 
-//             alert("please enter valid input")
-//         }
+//     }
+//     document.getElementById("list").innerHTML=str
+//     document.getElementById("user").value=""
+// }
+
+
+//PASSWORD VALIDATION
+
+    // function asd(){
+    // a=document.getElementById("password").value
+    // const password=/(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}/
+    // b=password.test(a)
+    // str=``
+    // if(b){
+    // str+=`<li>${a}</li><br>successful`
+    // }
+    // else{
+    // str+=`
+    // <li>invalid password</li>`
     
-//         document.getElementById("data").innerHTML=str
-//         document.getElementById("dobdata").value=""
-//     }  
+    // }
+    // document.getElementById("pwd").innerHTML=str
+    // document.getElementById("password").value=""
+    // }
+    
 
+
+
+
+//EMAIL VALIDATION
+// function asd(){
+//     a=document.getElementById("email").value
+//     const email=/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+//     b=email.test(a)
+//     str=``
+//     if(b){
+//     str+=`<li>${a}</li><br>email is valid`
+//     }
+//     else{
+//     str+=`
+//     <li>please enter valid email address</li>`
+    
+//     }
+//     document.getElementById("emailid").innerHTML=str
+//     document.getElementById("email").value=""
+//     }
+  
+
+    function asd(){
+        a=document.getElementById("user").value
+        c=document.getElementById("password").value
+        d=document.getElementById("email").value
+        const user=/^[a-zA-Z]{4,}$/
+        const password=/(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}/
+        const email=/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+        b=user.test(a)
+        b=password.test(c)
+        b=email.test(d)
+
+        str=``
+        if(b){
+        str+=`<li>${a,c,d}</li><br>email is valid
+        
+        `
+        }
+        else{
+        str+=`
+        <li>please enter valid email address</li>
+     <li>invalid password</li>
+      <li>invalid username</li>  `
+        
+        }
+        document.getElementById("emailid").innerHTML=str
+        document.getElementById("email").value=""
+document.getElementById("pwd").innerHTML=str
+        document.getElementById("password").value=""
+
+        document.getElementById("list").innerHTML=str
+        document.getElementById("user").value=""
+
+        }
+      
